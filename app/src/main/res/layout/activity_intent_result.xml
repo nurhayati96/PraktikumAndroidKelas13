@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="8dp"
+    tools:context=".StudentResultActivity">
+
+    <TextView
+        android:id="@+id/tvNpm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="NPM"
+        android:layout_marginBottom="8dp"
+        android:inputType="number"
+        />
+
+    <TextView
+        android:id="@+id/tvNama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nama Mahasiswa"
+        android:layout_marginBottom="8dp"
+        android:inputType="textPersonName"
+        />
+
+    <TextView
+        android:id="@+id/tvIpk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="IPK"
+        android:layout_marginBottom="8dp"
+        android:inputType="numberDecimal"
+        />
+
+    <TextView
+        android:id="@+id/tvJumlahMataKuliah"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Jumlah Mata Kuliah"
+        android:layout_marginBottom="8dp"
+        android:inputType="number"
+        />
+
+    <Button
+        android:id="@+id/btIntent1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="Finish"
+        />
+
+</LinearLayout>

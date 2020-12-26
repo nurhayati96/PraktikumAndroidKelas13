@@ -6,18 +6,78 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
+    android:padding="8dp"
     tools:context=".MainActivity">
 
-    <Button
-        android:layout_width="wrap_content"
+    <EditText
+        android:id="@+id/etNumber1"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Click Me"
+        android:hint="Angka Pertama"
+        android:layout_marginBottom="8dp"
+        android:inputType="numberDecimal"
         />
 
-    <Button
-        android:layout_width="wrap_content"
+    <EditText
+        android:id="@+id/etNumber2"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Click Me To"
+        android:hint="Angka Kedua"
+        android:layout_marginBottom="8dp"
+        android:inputType="numberDecimal"
         />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
+        <Button
+            android:id="@+id/btAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="+"
+            android:textSize="28sp" />
+
+        <Button
+            android:id="@+id/btSub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:layout_margin="8dp"
+            android:textSize="28sp"
+            />
+
+        <Button
+            android:id="@+id/btMul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*"
+            android:layout_margin="8dp"
+            android:textSize="28sp"
+            />
+
+        <Button
+            android:id="@+id/btDiv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/"
+            android:layout_margin="8dp"
+            android:textSize="28sp"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hasil"
+        android:textSize="28sp"
+        android:textAlignment="center"
+        android:gravity="center_horizontal" />
 
 </LinearLayout>

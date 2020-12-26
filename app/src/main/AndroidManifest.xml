@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.PraktikumAndroidKelas13">
-        <activity android:name=".StudentIntentActivity"></activity>
+        <activity android:name=".StudentResultActivity"></activity>
         <activity android:name=".StudentActivity" />
         <activity android:name=".SplashActivity">
             <intent-filter>

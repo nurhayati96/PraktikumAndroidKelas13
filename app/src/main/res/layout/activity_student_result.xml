@@ -7,7 +7,7 @@
     android:orientation="vertical"
     android:gravity="center"
     android:padding="8dp"
-    tools:context=".StudentIntentActivity">
+    tools:context=".StudentResultActivity">
 
     <TextView
         android:id="@+id/tvNpm"

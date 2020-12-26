@@ -26,7 +26,7 @@ class StudentActivity : AppCompatActivity() {
             val ipk = etIpk.text.toString().toDouble()
             val jumlahMataKuliah = etJumlahMataKuliah.text.toString().toInt()
 
-            val i = Intent(this, StudentIntentActivity::class.java)
+            val i = Intent(this, StudentResultActivity::class.java)
             i.putExtra("npm", npm)
             i.putExtra("nama", nama)
             i.putExtra("ipk", ipk)
@@ -34,6 +34,21 @@ class StudentActivity : AppCompatActivity() {
 
             startActivity(i)
 
+        }
+
+
+        btIntent2.setOnClickListener {
+            val npm = etNPM.text.toString()
+            val nama = etNama.text.toString()
+            val ipk = etIpk.text.toString().toDouble()
+            val jumlahMataKuliah = etJumlahMataKuliah.text.toString().toInt()
+
+            val mahasiswa = Student(npm, nama, ipk, jumlahMataKuliah)
+
+            val i = Intent(this, StudentResultActivity::class.java)
+            i.putExtra("mahasiswa", mahasiswa)
+
+            startActivity(i)
         }
 
     }
